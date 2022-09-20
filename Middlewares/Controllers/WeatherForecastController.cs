@@ -19,5 +19,18 @@ namespace Middlewares.Controllers
 
             return "ok";
         }
+
+
+        [HttpGet("Student")]
+        public Student get()
+        {
+            return new Student() { Id = 1, Name = "nana" };
+        }
+
+        [HttpPost("Student")]
+        public String CreateStudent([FromBody] Student student)
+        {
+            return "Öğrenci oluşturuldu";
+        }
     }
 }

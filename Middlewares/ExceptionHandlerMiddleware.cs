@@ -23,7 +23,7 @@ namespace Middlewares
                 await _next.Invoke(httpContext);
                 
             }
-            catch (Exception ex)
+            catch (Exception ex) 
             {
                 _logger.LogError(ex.Message);
                 
