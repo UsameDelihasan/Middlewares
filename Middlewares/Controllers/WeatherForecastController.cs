@@ -17,7 +17,7 @@ namespace Middlewares.Controllers
         {
             //throw new Exception("test hatası!");
 
-            return "ok";
+            return "Done!";
         }
 
 
